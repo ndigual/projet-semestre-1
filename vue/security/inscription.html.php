@@ -60,7 +60,7 @@ if (isset($_SESSION['arrayError'])) {
             <button>Créer Compte</button> 
         </div>
         <a href="<?php echo WEB_ROUTE.'?controller=formController&view=connexion' ?>">
-            <p class="inscription"> inscription </p>
+            <p class="inscription"> Connexion </p>
        </a>
 
     </form>
