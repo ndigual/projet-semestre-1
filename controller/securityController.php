@@ -113,6 +113,9 @@ function inscription_admin($admin) {
             valid_champ_user($arrayError, $email, 'email');
             valid_champ_user($arrayError, $password, 'password');
             valid_champ_user($arrayError, $confirmPassword, 'confirmPassword');
+            if($password !=$confirmPassword){
+                $arrayError['confirmPassword']="saisir le bon mot de passe";
+            }
             if (empty($arrayError)) {
                 
                 $user = [
