@@ -48,12 +48,6 @@ button{
     color: white;
     margin-top:2%;
 }
-input:hover{
-width: auto;
-height: 25px;
-background:black;
-color: white;
-}
 .tete{
 width: 100%;
 height: 40px;
