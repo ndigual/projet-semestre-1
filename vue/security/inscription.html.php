@@ -32,30 +32,24 @@ if (isset($_SESSION['arrayError'])) {
         <div class="tete">
         <h2>SE CONNECTER</h2>
       </div>
-      <div>
+     
            <input type="text" name="nom" placeholder="Nom"><br>
            <span><?php echo isset($arrayError['nom']) ? $arrayError['nom'] : '' ?></span>
-        </div>
-        <div>
+        
            <input type="text" name="prenom" placeholder="Prenom"><br>
            <span><?php echo isset($arrayError['prenom']) ? $arrayError['prenom'] : '' ?></span>
-        </div>
-        <div>
+        
            <input type="text" name="telephone" placeholder="Telephone"><br>
            <span><?php echo isset($arrayError['telephone']) ? $arrayError['telephone'] : '' ?></span>
-        </div>
-        <div>
+        
            <input type="text" name="email" placeholder="Email"><br>
            <span><?php echo isset($arrayError['email']) ? $arrayError['email'] : '' ?></span><br>
-        </div>
-        <div>
+        
             <input type="password" name="password" placeholder="Mot de Pass"><br>
             <span><?php echo isset($arrayError['password']) ? $arrayError['password'] : '' ?></span>
-        </div>
-        <div>
+        
            <input type="password" name="confirmPassword" placeholder="Valide Mot de Pass"><br>
            <span><?php echo isset($arrayError['confirmPassword']) ? $arrayError['confirmPassword'] : '' ?></span>
-        </div>
         <div>
             <button>Créer Compte</button> 
         </div>

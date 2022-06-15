@@ -30,8 +30,6 @@ if (isset($_SESSION['arrayError'])) {
 <form action="<?php echo WEB_ROUTE ?>" method="POST">
  <input type="hidden" name="controller" value="securityController">
  <input type="hidden" name="action" value="connexion">
-
-
     <div class="tete">
         <h2>SE CONNECTER</h2>
     </div>
@@ -41,7 +39,7 @@ if (isset($_SESSION['arrayError'])) {
 <span><?php echo isset($arrayError['password']) ? $arrayError['password'] : '' ?></span><br>
 <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=liste_question' ?>">
  <button name="valide">Connexion</button>
-</a>S'inscrire pour jouer <br>
+  </a>S'inscrire pour jouer <br>
 <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=creer_compte'?>">
     <p class="Creer_un_compte">Creer un compte </p> 
  </a>
