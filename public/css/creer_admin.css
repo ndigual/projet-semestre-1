@@ -66,7 +66,7 @@ margin: 3% auto;
 box-shadow: 5px 5px 5px 5px black;
 }
 input{
-    height: 20px;
+    height: 25px;
     width: 50%;
     margin: 10px auto;
     margin-left: 25%;
@@ -92,12 +92,6 @@ a:hover{
   background:#cccc;
   color: black;
 }
-input:hover{
-  width: auto;
-  height: 25px;
-  background:#cccc;
-  color: black;
-} 
 span{
   color: red;
 }
