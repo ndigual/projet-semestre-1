@@ -17,7 +17,11 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
             require_once(ROUTE_DIR.'vue/security/inscription.html.php');
         } elseif ($_GET['view'] == "creer_compte") {
           require_once(ROUTE_DIR.'vue/security/inscription.html.php');
-        } elseif ($_GET['view'] == "admin") {
+        } elseif ($_GET['view'] == "deconnexion") {
+            destroy_session();
+            require_once(ROUTE_DIR.'vue/security/connexion.html.php');
+        } 
+         elseif ($_GET['view'] == "admin") {
           require_once(ROUTE_DIR.'vue/security/creer_admin.html.php');
         } 
            elseif($_GET['view'] == "edit"){
@@ -83,6 +87,7 @@ function inscription($inscription) {
             if($password !=$confirmPassword){
                 $arrayError['confirmPassword']="saisir le bon mot de passe";
             }
+           /*  elseif($password !=) */
             if (empty($arrayError)) {
                 
                 $user = [
