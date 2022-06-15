@@ -5,10 +5,10 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
             require_once(ROUTE_DIR.'vue/security/connexion.html.php');
         }   /* elseif ($_GET['view'] == "inscription") {
             require_once(ROUTE_DIR.'vue/security/inscription.html.php');
-        } */ elseif ($_GET['view'] == "deconnexion") {
+        } */ /* elseif ($_GET['view'] == "deconnexion") {
             destroy_session();
             require_once(ROUTE_DIR.'vue/security/connexion.html.php');
-        } 
+        }  */
          
 } 
 

@@ -48,7 +48,12 @@
                  </div>
                   <div class="parametre">
                       <label for="">Type de Qustion</label><br>
-                      <input type="texte" class="type_question">
+                      <select name="" id="">
+                        <option value="">Donnez le type de reponse</option>
+                        <option value="Simple"> Reponse Simple</option>
+                        <option value="unique">Reponse unique</option>
+                        <option value="mulpiple"> Reponse a Choix multiple</option>
+                      </select>
                  </div>
         </form>
     </div>
