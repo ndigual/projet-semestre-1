@@ -1,0 +1,78 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+
+
+header{
+    width: auto;
+    height: auto;
+    background: black;
+    display: flex;
+    align-items: center;
+    
+}
+
+img{
+width: 70px;
+height: 70px;
+margin-left: 5px;
+}
+.logo{
+    margin-right: 60%;
+}
+.jouer{
+    color: white;
+    text-transform: capitalize ;
+    font-size: 30px;
+      margin-left:-130% ;
+}
+.tete{
+    width: 100%;
+    height: 40px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+     width: 40%;
+     height:300px; 
+     background:#cccc ;
+     margin: 100px auto; 
+
+}
+input{
+    height: 30px;
+    width: 50%;
+    margin: 4% auto;
+    margin-left: 25%;
+    box-shadow: 2px 2px  2px  2px black;
+}
+button{
+    height: 30px;
+    width: 20% ;
+    margin-left: 25%;
+    background: black;
+    color: white;
+    margin-top: 5%;
+}
+input:hover{
+    width: auto;
+    height: 25px;
+    background:black;
+    color: white;
+}
+.Creer_un_compte{
+  margin-top: 32px; 
+  text-decoration: none; 
+  color: black;
+}
+span{
+    color: red;
+}
+

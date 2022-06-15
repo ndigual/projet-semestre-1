@@ -1,0 +1,103 @@
+ *{
+    margin: 0%;
+    padding: 0%;
+}
+
+  header{
+width: auto;
+height: auto;
+background: black;
+display: flex;
+align-items: center;
+
+}
+
+img{
+width: 70px;
+height: 70px;
+margin-left: 5px;
+}
+.logo{
+margin-right: 60%;
+}
+.jouer{
+color: white;
+text-transform: capitalize ;
+font-size: 30px;
+margin-left:-130%;
+}
+.corps{
+width:70%;
+height: 500px;
+background: #cccc;
+margin-top:  -150px;
+margin-left:15%;
+display: flex;
+align-items: center;
+justify-content: center;
+justify-content: space-around; 
+}
+.deconnect{
+background: black;
+height:30px;
+width: 15%;
+margin-left:78%;
+margin-top: -90px;
+box-shadow: 2px 2px  2px  2px white;
+
+}
+.liste{
+background: white;
+width: 30%;
+height: 250px;
+margin-left: 7%;
+margin-top: 10%;
+box-shadow: 5px 5px 5px 5px black;
+}
+.inscrire{
+margin-left:40%;
+margin-top: 10px;
+}
+form{
+background: white;
+width: 45%;
+height: 400px;
+margin: 3% auto;
+box-shadow: 5px 5px 5px 5px black;
+}
+input{
+    height: 20px;
+    width: 50%;
+    margin: 10px auto;
+    margin-left: 25%;
+    box-shadow: 2px 2px  2px  2px black;
+}
+button{
+    height: 25px;
+    margin-left:40%;
+    background: black;
+    color: white;
+
+} 
+a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    display: flex;
+    margin:10%;
+}
+a:hover{
+  width: auto;
+  height: 25px;
+  background:#cccc;
+  color: black;
+}
+input:hover{
+  width: auto;
+  height: 25px;
+  background:#cccc;
+  color: black;
+} 
+span{
+  color: red;
+}
