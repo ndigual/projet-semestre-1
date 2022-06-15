@@ -62,10 +62,6 @@ button{
     margin-top: 5%;
 }
 input:hover{
-    width: auto;
-    height: 25px;
-    background:black;
-    color: white;
 }
 .Creer_un_compte{
   margin-top: 32px; 
