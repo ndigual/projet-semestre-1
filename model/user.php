@@ -49,4 +49,21 @@ function login_password_exist($login, $password) {
 
     return null;
 }
+function delete(string $id):bool{
+    $data = get_file_content();
+    $tab=[];
+    $yes=false;
+    foreach ($data as $value) {
+        if ($value['id'] == $id) {
+            $yes = true;
+        }else{
+            $tab [] = $value;
+        }
+    }
+    if($yes){
+        ajouter_fichier($tab);
+    }
+    return $yes;
+     
+}
 ?>

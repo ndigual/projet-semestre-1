@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
           require_once(ROUTE_DIR.'vue/security/inscription.html.php');
         } elseif ($_GET['view'] == "deconnexion") {
             destroy_session();
-           /*  var_dump($_SESSION);die; */
+             var_dump($_SESSION);die; 
             require_once(ROUTE_DIR.'vue/security/connexion.html.php');
         } 
          elseif ($_GET['view'] == "admin") {

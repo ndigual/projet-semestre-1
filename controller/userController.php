@@ -3,7 +3,7 @@
     if (isset($_GET['view'])) {
         if ($_GET['view'] == "list.user") {
             $users = get_list_user();
-            require_once(ROUTE_DIR.'vue/affiche_user.html.php');
+            require_once(ROUTE_DIR.'vue/security/liste_joueurs.html.php');
         }
     }
 } elseif ($_SERVER['REQUEST_METHOD'] == "POST") {
