@@ -13,7 +13,10 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
         } elseif ($_GET['view'] == "liste_joueurs") {
                  $users = get_list_user();
             require_once(ROUTE_DIR.'vue/security/liste_joueurs.html.php');
-        } elseif ($_GET['view'] == "inscription") {
+        }  elseif ($_GET['view'] == "liste_admin") {
+            $users = get_list_user();
+           require_once(ROUTE_DIR.'vue/security/liste_admin.html.php');
+        }elseif ($_GET['view'] == "inscription") {
             require_once(ROUTE_DIR.'vue/security/inscription.html.php');
         } elseif ($_GET['view'] == "creer_compte") {
           require_once(ROUTE_DIR.'vue/security/inscription.html.php');

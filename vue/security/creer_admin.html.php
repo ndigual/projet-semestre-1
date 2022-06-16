@@ -36,6 +36,9 @@ if (isset($_SESSION['arrayError'])) {
            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=creer_admin'?>">
                Créer Admin
             </a>
+            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=liste_admin'?>">
+               liste Admin
+            </a>
            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=liste_joueurs'?>">
                liste Joueurs
             </a>
