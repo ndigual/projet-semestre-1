@@ -66,4 +66,13 @@ function delete(string $id):bool{
     return $yes;
      
 }
+function modification(array $user){
+    $modif = get_file_content();
+    foreach ($modif as $key => $value) {
+        if($value['id'] == $user['id']){
+            $modif[$key] = $user;
+        }
+    }
+    ajouter_fichier($modif);
+}
 ?>

@@ -14,22 +14,27 @@
 if($_SERVER['REQUEST_METHOD'] == "GET") {
     if (isset($_GET['view'])) {
         if ($_GET['view'] == "add.user") {
-            require_once(ROUTE_DIR.'vue/add_user.html.php');
+            require_once(ROUTE_DIR.'vue/security/creer_admin.html.php');
         } elseif ($_GET['view'] == "list.user") {
             $users = get_list_user();
-            require_once(ROUTE_DIR.'vue/affiche_user.html.php');
+            require_once(ROUTE_DIR.'vue/security/liste_joueurs.html.php');
         }
          elseif ($_GET['view'] == "delete") {
             if(isset($_GET['id'])){
-            /*   delete($_GET['id']); */
+             delete($_GET['id']);
             header("location:".WEB_ROUTE."?controller=userController&view=list.user");
             } 
-        }elseif
+        }elseif ($_GET['view'] == "edit") {
+            $user=get_user_by_id($_GET['id']);
+            require_once(ROUTE_DIR.'vue/security/inscription.html.php');
+            header("location:".WEB_ROUTE."?controller=userController&view=add.user");
+        }
+      /*   elseif
             ($_GET['view']== "inscrire"){
                 require_once(ROUTE_DIR.'vue/add_user.html.php');
                 
             header("location:".WEB_ROUTE."?controller=userController&view=add.user");       
-        } 
+        }  */
     }
 } elseif ($_SERVER['REQUEST_METHOD'] == "POST") {
     if (isset($_POST['action'])) {
