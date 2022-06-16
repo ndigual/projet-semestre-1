@@ -49,7 +49,7 @@ if (isset($_SESSION['arrayError'])) {
        <form action=<?php echo WEB_ROUTE ?> method="POST">
        <input type="hidden" name="controller" value="securityController">
       <input type="hidden" name="action" value="admin">
-          <p class="inscrire">S'INSCRIRE</p><BR>
+          <p class="entete">S'INSCRIRE</p><BR>
         <input type="text" name="nom" placeholder="Nom"><br>
         <span><?php echo isset($arrayError['nom']) ? $arrayError['nom'] : '' ?></span>
         <input type="text" name="prenom" placeholder="Prenom"><br>

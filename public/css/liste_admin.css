@@ -115,3 +115,8 @@ table{
   height: 20px;
   width:70px ;
 }
+.entete{
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 22%;
+  }

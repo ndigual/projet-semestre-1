@@ -137,7 +137,7 @@ function inscription_admin($admin) {
                 
                 addUser($user);
                 $_SESSION['userConnected'] = $user;
-                header("location:".WEB_ROUTE."?controller=securityController&view=liste_joueurs");
+                header("location:".WEB_ROUTE."?controller=securityController&view=liste_admin");
                
             } else {
                 $_SESSION['arrayError'] = $arrayError;

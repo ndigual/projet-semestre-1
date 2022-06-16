@@ -40,7 +40,7 @@
      </div>
     <div class="joueurs">  
       <div>  
-        <p>LISTE DES JOUEURS PAR SCORE</p><br>
+        <p class="entete">LISTE DES JOUEURS PAR SCORE</p><br>
        <?php if(empty($users)):?>
         <h1>Aucun résultat</h1>
       <?php endif;?>
@@ -60,8 +60,8 @@
                         <td ><?php echo $val['telephone'];?></td>
                         <td ><?php echo $val['email'];?></td>
                         <td>
-                             <a href="<?= WEB_ROUTE.'/?controller=userController&view=delete&id'.$val['id']?>"> <button class="efface">Efface</button></a>
-                             <a href="<?= WEB_ROUTE.'/?controller=userController&view=edit&&id'.$val['id']?>">  <button class="modfi">Modifier</button></a>
+                             <a href="<?= WEB_ROUTE.'/?controller=userController&view=delete&id'.$val['id']?>"> </a>
+                             <a href="<?= WEB_ROUTE.'/?controller=userController&view=edit&&id'.$val['id']?>">  </a>
                          </td>
                     </tr>
                 <?php endforeach;?>

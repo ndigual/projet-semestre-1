@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/liste_joueurs.css">
+    <link rel="stylesheet" href="css/liste_admin.css">
  
 </head>
 <body>
@@ -40,7 +40,7 @@
      </div>
     <div class="joueurs">  
       <div>  
-        <p>LISTE DES JOUEURS PAR SCORE</p><br>
+        <p class="entete">LISTE DES JOUEURS ADMIN</p><br>
        <?php if(empty($users)):?>
         <h1>Aucun résultat</h1>
       <?php endif;?>
