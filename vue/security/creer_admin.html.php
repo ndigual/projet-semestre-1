@@ -26,7 +26,7 @@ if (isset($_SESSION['arrayError'])) {
         </nav>
     </header>
     <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=deconnexion'?>">
-        <button name="deconnexion" class="deconnect"> Deconnexion </button>
+        <button class="deconnect"> Deconnexion </button>
      </a>
     <div class="corps">
        <div class="liste">

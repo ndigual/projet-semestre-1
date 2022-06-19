@@ -40,10 +40,9 @@ justify-content: space-around;
 .deconnect{
 background: black;
 height:30px;
-width: 15%;
+width: 10%;
 margin-left:78%;
 margin-top: -90px;
-box-shadow: 2px 2px  2px  2px white;
 
 }
 .liste{
@@ -71,7 +70,12 @@ input{
     margin: 10px auto;
     margin-left: 25%;
     box-shadow: 2px 2px  2px  2px black;
+    border-radius: 20px;
 }
+::placeholder{
+  padding: 4%;
+}
+
 button{
     height: 25px;
     margin-left:40%;
