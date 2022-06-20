@@ -33,6 +33,7 @@ if (isset($_SESSION['arrayError'])) {
     <div class="tete">
         <h2>SE CONNECTER</h2>
     </div>
+ <span><?php echo isset( $arrayError['error'] ) ?  $arrayError['error']  : '' ?></span>
 <input type="text" name="email" placeholder="Email"><br>
 <span><?php echo isset($arrayError['email']) ? $arrayError['email'] : '' ?></span><br>
 <input type="password" name="password" placeholder="Mot de Pass"><br>

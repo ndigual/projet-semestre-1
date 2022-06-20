@@ -66,7 +66,7 @@ function connexion($data) {
             header("location:".WEB_ROUTE."?controller=securityController&view=admin");
             
         } else {
-            $arrayError['error'] = "email ou mot de passe incorrect";
+            $arrayError['error'] = "Email ou Mot de passe incorrect";
             $_SESSION['arrayError'] = $arrayError;
             header("location:".WEB_ROUTE."?controller=securityController&view=connexion");
         }
@@ -91,7 +91,7 @@ function inscription($inscription) {
             if($password !=$confirmPassword){
                 $arrayError['confirmPassword']="saisir le bon mot de passe";
             }
-           /*  elseif($password !=) */
+            if($password != "password") 
             if (empty($arrayError)) {
                 
                 $user = [

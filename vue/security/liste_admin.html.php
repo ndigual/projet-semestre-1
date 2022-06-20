@@ -49,7 +49,6 @@
                 <tr>
                     <td>Nom</td>
                     <td>Prénom</td>
-                    <td>Téléphone</td>
                     <td>Email</td>
                     <td>score</td>
                 </tr>
