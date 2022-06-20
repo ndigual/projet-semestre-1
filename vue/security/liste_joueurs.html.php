@@ -50,20 +50,20 @@
                     <td>Nom</td>
                     <td>Prénom</td>
                     <td>Téléphone</td>
-                    <td>Email</td>
                     <td>score</td>
                 </tr>
                 <?php foreach ($users as $key => $val):?>
+                    <?php if($val['role']=="role_joueur"):?>
                     <tr>
                         <td ><?php echo $val['nom'];?></td>
                         <td ><?php echo $val['prenom'];?></td>
                         <td ><?php echo $val['telephone'];?></td>
-                        <td ><?php echo $val['email'];?></td>
                         <td>
                              <a href="<?= WEB_ROUTE.'/?controller=userController&view=delete&id'.$val['id']?>"> </a>
                              <a href="<?= WEB_ROUTE.'/?controller=userController&view=edit&&id'.$val['id']?>">  </a>
                          </td>
                     </tr>
+                    <?php endif;?>
                 <?php endforeach;?>
             </table>
     <?php endif;?>

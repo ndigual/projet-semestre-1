@@ -54,6 +54,7 @@
                     <td>score</td>
                 </tr>
                 <?php foreach ($users as $key => $val):?>
+                    <?php if($val['role']=="role_admin"):?>
                     <tr>
                         <td ><?php echo $val['nom'];?></td>
                         <td ><?php echo $val['prenom'];?></td>
@@ -64,6 +65,7 @@
                              <a href="<?= WEB_ROUTE.'/?controller=userController&view=edit&&id'.$val['id']?>">  <button class="modfi">Modifier</button></a>
                          </td>
                     </tr>
+                    <?php endif;?>
                 <?php endforeach;?>
             </table>
     <?php endif;?>

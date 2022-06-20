@@ -100,6 +100,8 @@ function inscription($inscription) {
                     "telephone" => $telephone,
                     "email" => $email,
                     "password" => $password,
+                    "role" => "role_joueur"
+
                 ];
                 
                 addUser($user);
@@ -133,6 +135,8 @@ function inscription_admin($admin) {
                     "telephone" => $telephone,
                     "email" => $email,
                     "password" => $password,
+                    "role" => "role_admin",
+
                 ];
                 
                 addUser($user);
