@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 $arrayError = [];
 
 
@@ -6,7 +6,7 @@ if (isset($_SESSION['arrayError'])) {
     $arrayError = $_SESSION['arrayError'];
     unset($_SESSION['arrayError']);
 }
-?> -->
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
