@@ -14,7 +14,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
                  $users = get_list_user();
             require_once(ROUTE_DIR.'vue/security/liste_joueurs.html.php');
         }  elseif ($_GET['view'] == "liste_admin") {
-            $users = get_list_user();
+                $users = get_list_user();
            require_once(ROUTE_DIR.'vue/security/liste_admin.html.php');
         }elseif ($_GET['view'] == "inscription") {
             require_once(ROUTE_DIR.'vue/security/inscription.html.php');
