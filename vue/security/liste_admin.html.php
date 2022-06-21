@@ -21,6 +21,7 @@
         <button class="deconnect"> Deconnexion </button>
      </a>
     <div class="corps">
+    
        <div class="liste">
            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=liste_question'?>">
                liste Questions
@@ -40,26 +41,25 @@
      </div>
     <div class="joueurs">  
       <div>  
-        <p class="entete">LISTE DES JOUEURS ADMIN</p><br>
+        <p class="entete">LISTE DES JOUEURS ADMIN</p>
        <?php if(empty($users)):?>
         <h1>Aucun résultat</h1>
       <?php endif;?>
          <?php if(!empty($users)):?>
             <table border="2">
-                <tr>
-                    <td>Nom</td>
-                    <td>Prénom</td>
-                    <td>Email</td>
-                    <td>score</td>
-                </tr>
-                <?php foreach ($users as $key => $val):?>
+                  <tr class="header">
+                      <td>Nom</td>
+                      <td>Prénom</td>
+                      <td>Email</td>
+                      <td>Option</td>
+                  </tr>
+                 <?php foreach ($users as $key => $val):?>
                     <?php if($val['role']=="role_admin"):?>
                     <tr>
                         <td ><?php echo $val['nom'];?></td>
                         <td ><?php echo $val['prenom'];?></td>
-                        <td ><?php echo $val['telephone'];?></td>
                         <td ><?php echo $val['email'];?></td>
-                        <td>
+                         <td class="Option">
                              <a href="<?= WEB_ROUTE.'/?controller=userController&view=delete&id'.$val['id']?>"> <button class="efface">Efface</button></a>
                              <a href="<?= WEB_ROUTE.'/?controller=userController&view=edit&&id'.$val['id']?>">  <button class="modfi">Modifier</button></a>
                          </td>

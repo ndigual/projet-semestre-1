@@ -46,7 +46,7 @@
       <?php endif;?>
          <?php if(!empty($users)):?>
             <table border="2">
-                <tr>
+                <tr class="header">
                     <td>Nom</td>
                     <td>Prénom</td>
                     <td>Téléphone</td>

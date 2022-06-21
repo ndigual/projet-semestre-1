@@ -40,13 +40,13 @@ if (isset($_SESSION['arrayError'])) {
            <input type="text" name="prenom" placeholder="Prenom"><br>
            <span><?php echo isset($arrayError['prenom']) ? $arrayError['prenom'] : '' ?></span>
            </div>
-           <div>
+          <!--  <div>
            <input type="text" name="telephone" placeholder="Telephone"><br>
            <span><?php echo isset($arrayError['telephone']) ? $arrayError['telephone'] : '' ?></span>
-           </div>
+           </div> -->
            <div>
            <input type="text" name="email" placeholder="Email"><br>
-           <span><?php echo isset($arrayError['email']) ? $arrayError['email'] : '' ?></span><br>
+           <span><?php echo isset($arrayError['email']) ? $arrayError['email'] : '' ?></span>
            </div>
            <div>
             <input type="password" name="password" placeholder="Mot de Pass"><br>
