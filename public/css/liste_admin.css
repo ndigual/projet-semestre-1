@@ -98,9 +98,11 @@ input:hover{
 
  .efface{
   width:70px ;
+  background:red ;
 }
 .modfi{
   width:70px ;
+  background: greenyellow;
 } 
 .entete{
     font-size: larger;
@@ -116,9 +118,4 @@ input:hover{
   color: white;
   height: 30px;
   width: 80%;
- }
- .Option{
-  display: flex;
-  justify-content: center;
-  align-items: center;
  }
