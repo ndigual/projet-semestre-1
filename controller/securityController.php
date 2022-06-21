@@ -20,10 +20,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
             require_once(ROUTE_DIR.'vue/security/inscription.html.php');
         } elseif ($_GET['view'] == "creer_compte") {
           require_once(ROUTE_DIR.'vue/security/inscription.html.php');
-        } elseif ($_GET['view'] == "deconnexion") {
-            require_once(ROUTE_DIR.'vue/security/connexion.html.php');
-            destroy_session();
-        }  elseif ($_GET['view'] == "admin") {
+        } elseif ($_GET['view'] == "admin") {
           require_once(ROUTE_DIR.'vue/security/creer_admin.html.php');
         }  elseif($_GET['view'] == "edit"){
             $user=get_user_by_id ($_GET['id']);

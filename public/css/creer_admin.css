@@ -1,11 +1,13 @@
  *{
+   box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+
 }
 
   header{
 width: auto;
-height: auto;
+height: 80px;
 background: black;
 display: flex;
 align-items: center;
@@ -24,34 +26,24 @@ margin-right: 60%;
 color: white;
 text-transform: capitalize ;
 font-size: 30px;
-margin-left:-130%;
+ margin-left:-250px; 
 }
 .corps{
-width:70%;
-height: 400px;
-background: #cccc;
-margin-top:  -150px;
-margin-left:15%;
+width:80%;
+height: 450px;
+background: #cccccccc;
+margin:  80px auto;
 display: flex;
 align-items: center;
 justify-content: center;
 justify-content: space-around; 
 }
- .deconnect{
-background: black;
-color: white;
-height:30px;
-width: 10%;
-margin-left:78%;
-margin-top: -90px;
-
-} 
 .liste{
 background: white;
 width: 30%;
-height: 250px;
+height: 270px;
 margin-left: 7%;
-margin-top: 10%;
+margin-top: 5%;
 box-shadow: 5px 5px 5px 5px black;
 }
 .inscrire{
@@ -61,7 +53,7 @@ margin-top: 10px;
 form{
 background: white;
 width: 45%;
-height: 350px;
+height: 380px;
 margin: 3% auto;
 box-shadow: 5px 5px 5px 5px black;
 }
@@ -73,15 +65,18 @@ input{
     box-shadow: 2px 2px  2px  2px black;
     border-radius: 20px;
 }
+.envoi{
+background: black;
+color: white;
+}
 ::placeholder{
   padding: 4%;
 }
 
-button{
-    height: 25px;
-    margin-left:40%;
-    background: black;
-    color: white;
+.deconnexion{
+  width: auto;
+  height: auto; 
+  margin-left:240px ;
 } 
 a{
     text-decoration: none;

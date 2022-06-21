@@ -16,10 +16,12 @@
         <nav>
             <p class="jouer">le plaisir de jouer</p>
         </nav>
+        <div class="deconnexion">
+            <a href="<?php echo WEB_ROUTE.'?controller=formController&view=deconnexion'?>">
+             <button> Deconnexion </button>
+            </a>
+        </div>
     </header>
-    <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=deconnexion'?>">
-        <button class="deconnect"> Deconnexion </button>
-     </a>
     <div class="corps">
        <div class="liste">
            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=liste_question'?>">

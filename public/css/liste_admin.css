@@ -2,14 +2,14 @@
     margin: 0%;
     padding: 0%;
 }
-  header{
-width: auto;
-height: auto;
-background: black;
-display: flex;
-align-items: center;
-
-}
+header{
+  width: auto;
+  height: 80px;
+  background: black;
+  display: flex;
+  align-items: center;
+  
+  }
 
 img{
 width: 70px;
@@ -26,31 +26,28 @@ font-size: 30px;
 margin-left:-130%;
 }
 .corps{
-  width:70%;
-  height: 400px;
-  background: #cccc;
-  margin-top:  -150px;
-  margin-left:15%; 
+  width:80%;
+  height: 450px;
+  background: #cccccccc;
+  margin:  80px auto;
   display: flex;
+  align-items: center;
   justify-content: center;
-  justify-content: space-around;
+  justify-content: space-around; 
   }
-  .deconnect{
-  background: black;
-  color: white;
-  height:30px;
-  width: 10%;
-  margin-left:78%;
-  margin-top: -90px; 
+  .liste{
+  background: white;
+  width: 30%;
+  height: 270px;
+  margin-left: 7%;
+  margin-top: 5%;
+  box-shadow: 5px 5px 5px 5px black;
   }
-.liste{
-background: white;
-width: 30%;
-height: 250px;
-margin-left: 7%;
-margin-top: 10%;
-box-shadow: 5px 5px 5px 5px black;
-}
+ .deconnexion{
+    width: auto;
+    height: auto; 
+  } 
+
 .inscrire{
 margin-left:40%;
 margin-top: 10px;
@@ -68,12 +65,12 @@ width: 50%;
 margin: 10px auto;
 margin-left: 25%;
 }
-button{
+/* button{
 height: 25px;
 margin-left:40%;
 background: black;
 color: white;
-} 
+}  */
 a{
 text-decoration: none;
 color: black;
@@ -100,11 +97,9 @@ input:hover{
 }
 
  .efface{
-  height: 20px;
-  width:105px ;
+  width:70px ;
 }
 .modfi{
-  height: 20px;
   width:70px ;
 } 
 .entete{
@@ -124,4 +119,6 @@ input:hover{
  }
  .Option{
   display: flex;
+  justify-content: center;
+  align-items: center;
  }
