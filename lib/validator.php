@@ -21,4 +21,28 @@ function valid_champ_user(array &$arrayError, $valeur, string $key) {
     }
     
 }
+function valid_input(array &$arrayError, $valeur, string $key) {
+    if (est_vide($valeur)) {
+        $arrayError[$key] = "Champ obligatoire";
+    }
+    
+}
+function valid_point(array &$arrayError, $valeur, string $key) {
+    if (est_vide($valeur)) {
+        $arrayError[$key] = "Champ obligatoire";
+    }
+    
+}
+function valid_nbr_reponse(array &$arrayError, $valeur, string $key) {
+    if (est_vide($valeur)) {
+        $arrayError[$key] = "Champ obligatoire";
+    }
+    
+}
+function type_reponse(array &$arrayError, $valeur, string $key) {
+    if (est_vide($valeur)) {
+        $arrayError[$key] = "Champ obligatoire";
+    }
+    
+}
 ?>
