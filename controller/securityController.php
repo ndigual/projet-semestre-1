@@ -4,7 +4,9 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
     if (isset($_GET['view'])) {
         if ($_GET['view'] == "connexion") {
             require_once(ROUTE_DIR.'vue/security/connexion.html.php');
-        } elseif ($_GET['view'] == "liste_question") {
+        }   elseif ($_GET['view'] == "deconnexion") {
+            require_once(ROUTE_DIR.'vue/security/deconnexion.html.php');
+        }  elseif ($_GET['view'] == "liste_question") {
             require_once(ROUTE_DIR.'vue/security/liste_question.html.php');
         } elseif ($_GET['view'] == "creer_admin") {
             require_once(ROUTE_DIR.'vue/security/creer_admin.html.php');
@@ -144,7 +146,9 @@ function inscription_admin($admin) {
 
             
 }
-
+function deconnexion(){
+    unset($_SESSION['userConnected']);
+}
 
 
 ?>

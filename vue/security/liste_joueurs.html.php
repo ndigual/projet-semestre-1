@@ -17,7 +17,7 @@
             <p class="jouer">le plaisir de jouer</p>
         </nav>
         <div class="deconnexion">
-            <a href="<?php echo WEB_ROUTE.'?controller=formController&view=deconnexion'?>">
+            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=deconnexion'?>">
              <button> Deconnexion </button>
             </a>
         </div>
