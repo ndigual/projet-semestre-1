@@ -1,7 +1,7 @@
 <?php 
- if($_SERVER['REQUEST_METHOD'] == "GET") {
+  if($_SERVER['REQUEST_METHOD'] == "GET") {
     if (isset($_GET['view'])) {
-        if ($_GET['view'] == "list.user") {
+        if ($_GET['view'] == "list.user"){
             $users = get_list_user();
             require_once(ROUTE_DIR.'vue/security/liste_joueurs.html.php');
         }
@@ -10,19 +10,19 @@
     if (isset($_POST['action'])) {
         
     }
-} 
+}  
 if($_SERVER['REQUEST_METHOD'] == "GET") {
     if (isset($_GET['view'])) {
         if ($_GET['view'] == "add.user") {
             require_once(ROUTE_DIR.'vue/security/creer_admin.html.php');
-        } elseif ($_GET['view'] == "list.user") {
-            $users = get_list_user();
-            require_once(ROUTE_DIR.'vue/security/liste_joueurs.html.php');
+        } elseif ($_GET['view'] == "list.user.admin") {
+            $users = get_list_admin();
+            require_once(ROUTE_DIR.'vue/security/liste_admin.html.php');
         }
          elseif ($_GET['view'] == "delete") {
             if(isset($_GET['id'])){
              delete($_GET['id']);
-            header("location:".WEB_ROUTE."?controller=userController&view=list.user");
+            header("location:".WEB_ROUTE."?controller=userController&view=list.user.admin");
             } 
         }elseif ($_GET['view'] == "edit") {
             $user=get_user_by_id($_GET['id']);

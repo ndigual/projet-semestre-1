@@ -17,7 +17,14 @@ function get_list_user() {
 
     return $users;
 }
+function get_list_admin() {
+    $users = get_file_content();
+    if (!isset($users)) {
+        $users = [];
+    }
 
+    return $users;
+}
 function get_user_by_id(int $id) {
     $users = get_list_user();
     foreach ($users as $key => $value) {

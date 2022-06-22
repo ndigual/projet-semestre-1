@@ -5,6 +5,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
         if ($_GET['view'] == "connexion") {
             require_once(ROUTE_DIR.'vue/security/connexion.html.php');
         }   elseif ($_GET['view'] == "deconnexion") {
+            destroy_session();
             require_once(ROUTE_DIR.'vue/security/deconnexion.html.php');
         }  elseif ($_GET['view'] == "liste_question") {
             require_once(ROUTE_DIR.'vue/security/liste_question.html.php');
@@ -16,7 +17,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
                  $users = get_list_user();
             require_once(ROUTE_DIR.'vue/security/liste_joueurs.html.php');
         }  elseif ($_GET['view'] == "liste_admin") {
-                $users = get_list_user();
+                $users = get_list_admin();
            require_once(ROUTE_DIR.'vue/security/liste_admin.html.php');
         }elseif ($_GET['view'] == "inscription") {
             require_once(ROUTE_DIR.'vue/security/inscription.html.php');
@@ -148,6 +149,7 @@ function inscription_admin($admin) {
 }
 function deconnexion(){
     unset($_SESSION['userConnected']);
+    header("location:".WEB_ROUTE."?controller=securityController&view=connexion");
 }
 
 

@@ -21,7 +21,7 @@
              <button> Deconnexion </button>
             </a>
         </div>
-    </header>
+    </header>user
     <div class="corps">
        <div class="liste">
            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=liste_question'?>">
@@ -60,10 +60,6 @@
                         <td ><?php echo $val['nom'];?></td>
                         <td ><?php echo $val['prenom'];?></td>
                         <td ><?php echo $val['telephone'];?></td>
-                        <td>
-                             <a href="<?= WEB_ROUTE.'/?controller=userController&view=delete&id'.$val['id']?>"> </a>
-                             <a href="<?= WEB_ROUTE.'/?controller=userController&view=edit&&id'.$val['id']?>">  </a>
-                         </td>
                     </tr>
                     <?php endif;?>
                 <?php endforeach;?>

@@ -45,4 +45,10 @@ function type_reponse(array &$arrayError, $valeur, string $key) {
     }
     
 }
+function  countpage (){
+
+}
+function getListToDisplay() {
+      
+}
 ?>

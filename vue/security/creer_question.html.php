@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -60,6 +60,9 @@
                         <option value="unique">Reponse unique</option>
                         <option value="mulpiple"> Reponse a Choix multiple</option>
                       </select>
+                      <span id="plus">
+                          <i class="fa-solid fa-plus breukh"></i><br><br>
+                      </span>  
                  </div>
                  <button type="submit" class="butonQuestion">Enregistrer</button>
         </form>
@@ -209,4 +212,4 @@ rep.appendChild(div)
 
     </div>
 </body>
-</html>
+</html> 
