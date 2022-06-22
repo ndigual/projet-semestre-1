@@ -98,11 +98,11 @@ input:hover{
 
  .efface{
   width:70px ;
-  background:red ;
+  background:white;
 }
 .modfi{
   width:70px ;
-  background: greenyellow;
+  background: white;
 } 
 .entete{
     font-size: larger;

@@ -60,7 +60,7 @@ function delete(string $id):bool{
     $data = get_file_content();
     $tab=[];
     $yes=false;
-    foreach ($data as $value) {
+    foreach ($data as $key => $value) {
         if ($value['id'] == $id) {
             $yes = true;
         }else{
@@ -80,6 +80,6 @@ function modification(array $user){
             $modif[$key] = $user;
         }
     }
-    ajouter_fichier($modif);
 }
+
 ?>

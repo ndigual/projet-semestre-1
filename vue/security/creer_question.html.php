@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/creer_question.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -42,6 +43,9 @@
             </a>
        </div>
        <form action="">
+       <input type="hidden" name="controller" value="questionController">
+       <input type="hidden" name="action" value="creerquestion">
+       <input type="hidden" name="action" value="CREER">
                <P class="entete">PARAMETRER VOTRE QUIZZ</P>
                <form action="">
                 <div class="parametre">

@@ -23,7 +23,8 @@
         </div>
     </header>
     <div class="corps">
-    
+    <input type="hidden" name="controller" value="securityController">
+    <input type="hidden" name="action" value="list.users">
        <div class="liste">
            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=liste_question'?>">
                liste Questions
@@ -63,7 +64,7 @@
                         <td ><?php echo $val['email'];?></td>
                          <td>
                              <a href="<?= WEB_ROUTE.'/?controller=userController&view=delete&id'.$val['id']?>"> <button class="efface">Efface</button></a>
-                             <a href="<?= WEB_ROUTE.'/?controller=userController&view=edit&&id'.$val['id']?>">  <button class="modfi">Modifier</button></a>
+                             <a href="<?= WEB_ROUTE.'/?controller=userController&view=edit&id'.$val['id']?>">  <button class="modfi">Modifier</button></a>
                          </td>
                     </tr>
                     <?php endif;?>

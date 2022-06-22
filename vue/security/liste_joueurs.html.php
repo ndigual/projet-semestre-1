@@ -23,6 +23,8 @@
         </div>
     </header>user
     <div class="corps">
+    <input type="hidden" name="controller" value="securityController">
+    <input type="hidden" name="action" value="list.user">
        <div class="liste">
            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=liste_question'?>">
                liste Questions
@@ -45,7 +47,7 @@
         <p class="entete">LISTE DES JOUEURS PAR SCORE</p><br>
        <?php if(empty($users)):?>
         <h1>Aucun résultat</h1>
-      <?php endif;?>
+      <?php endif;?> 
          <?php if(!empty($users)):?>
             <table border="2">
                 <tr class="header">
