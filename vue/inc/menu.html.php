@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
     header {
         width: 100%;
         display: flex;
@@ -36,4 +36,4 @@
             affiche utilisateur
         </a>
     </nav>
-</header>
+</header> -->
