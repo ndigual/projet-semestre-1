@@ -1,3 +1,5 @@
+
+
 <?php
 function open_session() {
     if (session_status()== PHP_SESSION_NONE) {
@@ -12,5 +14,15 @@ function destroy_session(){
 function is_user_connect() {
     return isset($_SESSION['userConnected']);
 }
+function est_connect():bool{
+    return isset($_SESSION['userConnect']);
+}
 
+function  est_joueur():bool{
+  return est_connect() && $_SESSION['userConnect']['role']=='ROLE_JOUEUR';
+}
+
+function  est_admin():bool{
+    return est_connect() && $_SESSION['userConnect']['role']=='ROLE_ADMIN';
+}
 ?>
