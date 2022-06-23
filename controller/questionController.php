@@ -15,7 +15,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
             $Questions = get_list_question();
             $totalPage= countpage(4, $Questions);
             $Questions= getListToDisplay($Questions, $page, 4);
-            require_once(ROUTE_DIR.'vue/security/affiche_question.html.php');
+            require_once(ROUTE_DIR.'vue/security/liste_question.html.php');
         }
     }
 }elseif ($_SERVER['REQUEST_METHOD'] == "POST") {

@@ -43,7 +43,8 @@
            <form action="">
                <P class="entete">LISTE DES QUESTIONS</P>
                <form action="">
-               
+               <input type="hidden" name="controller" value="questionController">
+               <input type="hidden" name="action" value="list.question">
             </div>
         </form>
     </div>
