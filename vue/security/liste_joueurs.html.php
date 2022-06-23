@@ -21,7 +21,7 @@
              <button> Deconnexion </button>
             </a>
         </div>
-    </header>user
+    </header>
     <div class="corps">
     <input type="hidden" name="controller" value="securityController">
     <input type="hidden" name="action" value="list.user">

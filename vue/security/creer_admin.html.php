@@ -53,7 +53,7 @@ if (isset($_SESSION['arrayError'])) {
        <input type="hidden" name="controller" value="securityController">
       <input type="hidden" name="action" value="admin">
       <input type="hidden" name="action" value="<?=isset($user['id']) ? 'edit' : 'add.user' ?>">
-      <input type="hidden" name="id" value="<?=isset($user['id']) ? $user['id'] : '' ?>">
+    <input type="hidden" name="id" value="<?=isset($user['id']) ? $user['id'] : '' ?>">
           <p class="entete">S'INSCRIRE</p><BR>
         <input type="text" name="nom" placeholder="Nom"><br>
         <span><?php echo isset($arrayError['nom']) ? $arrayError['nom'] : '' ?></span>

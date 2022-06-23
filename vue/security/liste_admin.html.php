@@ -23,8 +23,6 @@
         </div>
     </header>
     <div class="corps">
-    <input type="hidden" name="controller" value="securityController">
-    <input type="hidden" name="action" value="list.users">
        <div class="liste">
            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=liste_question'?>">
                liste Questions

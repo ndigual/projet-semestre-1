@@ -52,7 +52,12 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
            inscription($_POST,$_FILES);
        }elseif ($_POST['action'] == "admin") {    
         inscription_admin($_POST ,$_FILES);
-    }
+    }elseif ($_POST['action'] == "add.user") {
+        
+        inscription_admin($_POST);
+     }elseif ($_POST['action'] == "edit") {
+        inscription_admin($_POST);
+      }
     
     }
 }
@@ -109,8 +114,8 @@ function inscription($inscription) {
                     "telephone" => $telephone,
                     "email" => $email,
                     "password" => $password,
-                    "role" => "role_joueur"
-
+                    "role" => "role_joueur",
+                    "id"=>uniqid()
                 ];
                 
                 addUser($user);
@@ -145,7 +150,7 @@ function inscription_admin($admin) {
                     "email" => $email,
                     "password" => $password,
                     "role" => "role_admin",
-
+                    "id"=>uniqid()
                 ];
                 
                 addUser($user);
