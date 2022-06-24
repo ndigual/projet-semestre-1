@@ -25,7 +25,10 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
           require_once(ROUTE_DIR.'vue/security/inscription.html.php');
         } elseif ($_GET['view'] == "admin") {
           require_once(ROUTE_DIR.'vue/security/creer_admin.html.php');
-        }  elseif($_GET['view'] == "edit"){
+        } elseif ($_GET['view'] == "jouer") {
+            require_once(ROUTE_DIR.'vue/security/jouer.html.php');
+          } 
+         elseif($_GET['view'] == "edit"){
             $user=get_user_by_id ($_GET['id']);
             require_once(ROUTE_DIR.'vue/security/creer_admin.html.php');
           }  elseif ($_GET['view'] == "delete") {
@@ -74,6 +77,13 @@ function connexion($data) {
         if ($result != null) {
             $_SESSION['userConnected'] = $result;
             header("location:".WEB_ROUTE."?controller=securityController&view=liste_question");
+            if ($_SESSION['userConnected']['role'] == "role_joueur") {
+                header("location:" . WEB_ROUTE . "?controller=securityController&view=jouer");
+            } else {
+                header("location:" . WEB_ROUTE . "?controller=securityController&view=liste_question");
+            }
+ 
+ 
             
         } else {
             $arrayError['error'] = "Email ou Mot de passe incorrect";
@@ -85,9 +95,8 @@ function connexion($data) {
         header("location:".WEB_ROUTE."?controller=securityController&view=connexion");
     }
 
-    
-}
-
+   
+} 
 function inscription($inscription) {
     $arrayError = [];
     extract($inscription);
@@ -122,7 +131,6 @@ function inscription($inscription) {
                 $_SESSION['arrayError'] = $arrayError;
                 header("location:".WEB_ROUTE."?controller=securityController&view=inscription");
             }
-
             
 }
 function inscription_admin($admin) {

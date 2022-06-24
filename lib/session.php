@@ -19,10 +19,10 @@ function est_connect():bool{
 }
 
 function  est_joueur():bool{
-  return est_connect() && $_SESSION['userConnect']['role']=='ROLE_JOUEUR';
+  return est_connect() && $_SESSION['userConnect']['role']=='role_joueur';
 }
 
 function  est_admin():bool{
-    return est_connect() && $_SESSION['userConnect']['role']=='ROLE_ADMIN';
+    return est_connect() && $_SESSION['userConnect']['role']=='role_admin';
 }
 ?>
