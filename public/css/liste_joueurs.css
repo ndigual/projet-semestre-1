@@ -28,7 +28,7 @@ margin-left:-130%;
 .corps{
   width:80%;
   height: 450px;
-  background: #cccccccc;
+  background: whitesmoke;
   margin:  80px auto;
   display: flex;
   align-items: center;
@@ -82,7 +82,7 @@ color: black;
 input:hover{
   width: auto;
   height: 25px;
-  background:#cccc;
+  background:whitesmoke;
   color: black;
 }
 .joueurs{
@@ -99,7 +99,7 @@ input:hover{
   background: black;
   color: white;
   height: 30px;
-  width: 80%;
+  width: 450px;
  }
 .efface{
   height: 20px;

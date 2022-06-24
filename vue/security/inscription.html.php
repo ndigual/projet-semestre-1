@@ -32,27 +32,27 @@ if (isset($_SESSION['arrayError'])) {
         <div class="tete">
         <h2>SE CONNECTER</h2>
       </div>
-          <div>
+          <div class="form_group">
            <input type="text" name="nom" placeholder="Nom"><br>
            <span><?php echo isset($arrayError['nom']) ? $arrayError['nom'] : '' ?></span>
            </div>
-           <div>
+           <div class="form_group">
            <input type="text" name="prenom" placeholder="Prenom"><br>
            <span><?php echo isset($arrayError['prenom']) ? $arrayError['prenom'] : '' ?></span>
            </div>
-          <div>
+          <div class="form_group">
            <input type="text" name="telephone" placeholder="Telephone"><br>
            <span><?php echo isset($arrayError['telephone']) ? $arrayError['telephone'] : '' ?></span>
            </div> 
-           <div>
+           <div class="form_group">
            <input type="text" name="email" placeholder="Email"><br>
            <span><?php echo isset($arrayError['email']) ? $arrayError['email'] : '' ?></span>
            </div>
-           <div>
+           <div class="form_group">
             <input type="password" name="password" placeholder="Mot de Pass"><br>
             <span><?php echo isset($arrayError['password']) ? $arrayError['password'] : '' ?></span>
             </div>
-            <div>
+            <div class="form_group">
            <input type="password" name="confirmPassword" placeholder="Valide Mot de Pass"><br>
            <span><?php echo isset($arrayError['confirmPassword']) ? $arrayError['confirmPassword'] : '' ?></span>
            </div>
@@ -60,7 +60,7 @@ if (isset($_SESSION['arrayError'])) {
             <button>Créer Compte</button> 
         </div>
         <a href="<?php echo WEB_ROUTE.'?controller=formController&view=connexion' ?>">
-            <p class="inscription"> Connexion </p>
+            <p class="inscription"> connexion </p>
        </a>
 
     </form>

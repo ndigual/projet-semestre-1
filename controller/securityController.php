@@ -35,12 +35,8 @@ if($_SERVER['REQUEST_METHOD'] == "GET") {
             }elseif ($_GET['view'] == "edit") {
                 $user=get_user_by_id($_GET['id']);
                 require_once(ROUTE_DIR.'vue/security/liste_admin.html.php');
-            }
-        }
-        elseif ($_GET['view'] == "edit") {
-            $user=get_user_by_id($_GET['id']);
-            require_once(ROUTE_DIR.'vue/security/inscription.html.php');
-        }
+            } 
+        } 
     }
 }  elseif ($_SERVER['REQUEST_METHOD'] == "POST") {
     

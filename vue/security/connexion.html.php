@@ -33,9 +33,9 @@ if (isset($_SESSION['arrayError'])) {
     <div class="tete">
         <h2>SE CONNECTER</h2>
     </div>
- <span><?php echo isset( $arrayError['error'] ) ?  $arrayError['error']  : '' ?></span>
-<input type="text" name="email" placeholder="Email"><br>
-<span><?php echo isset($arrayError['email']) ? $arrayError['email'] : '' ?></span><br>
+ <span><?php echo isset( $arrayError['error'] ) ?  $arrayError['error']  : '' ?></span><br>
+  <input type="text" name="email" placeholder="Email"><br>
+  <span><?php echo isset($arrayError['email']) ? $arrayError['email'] : '' ?></span><br>
 <input type="password" name="password" placeholder="Mot de Pass"><br>
 <span><?php echo isset($arrayError['password']) ? $arrayError['password'] : '' ?></span><br>
 <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=liste_question' ?>">

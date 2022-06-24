@@ -55,16 +55,26 @@ if (isset($_SESSION['arrayError'])) {
        <input type="hidden" name="action" value="<?=isset($user['id']) ? 'edit' : 'add.user' ?>">
        <input type="hidden" name="id" value="<?=isset($user['id']) ? $user['id'] : '' ?>">                                       
           <p class="entete">S'INSCRIRE</p><BR>
+          <div>
         <input type="text" name="nom" placeholder="Nom"><br>
         <span><?php echo isset($arrayError['nom']) ? $arrayError['nom'] : '' ?></span>
+        </div>
+        <div>
         <input type="text" name="prenom" placeholder="Prenom"><br>
         <span><?php echo isset($arrayError['prenom']) ? $arrayError['prenom'] : '' ?></span>
+        </div>
+        <div>
         <input type="text" name="email" placeholder="Email"><br>
         <span><?php echo isset($arrayError['email']) ? $arrayError['email'] : '' ?></span>
+        </div>
+        <div>
         <input type="password" name="password" placeholder="Mot de Pass"><br>
         <span><?php echo isset($arrayError['password']) ? $arrayError['password'] : '' ?></span>
+        </div>
+        <div>
         <input type="password" name="confirmPassword" placeholder="Valide Mot de Pass"><br>
         <span><?php echo isset($arrayError['confirmPassword']) ? $arrayError['confirmPassword'] : '' ?></span>
+        </div>
         <input type="submit" class="envoi"> 
     
        </form>
