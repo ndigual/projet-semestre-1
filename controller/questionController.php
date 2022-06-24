@@ -2,18 +2,18 @@
 if($_SERVER['REQUEST_METHOD'] == "GET") {
 if (isset($_GET['view'])) {
 if ($_GET['view'] == "creerquestion") {
-require_once(ROUTE_DIR.'vue/security/Creer.question.html.php');
+require_once(ROUTE_DIR.'vue/security/creer_question.html.php');
 }elseif ($_GET['view'] == "list.question") {
-$Questions= get_list_question();
-require_once(ROUTE_DIR.'vue/security/affiche_question.html.php');
+$Questions=  get_list_question();
+require_once(ROUTE_DIR.'vue/security/liste_question.html.php');
 } elseif ($_GET['view'] == "list.question") {
 $page=1;
 if(isset($_GET['page'])){
 $page = intval($_GET['page']);
 }
 $Questions = get_list_question();
-$totalPage= countpage(5, $Questions);
-$Questions= getListToDisplay($Questions, $page, 5);
+ $totalPage= countpage(5, $Questions);
+$Questions= getListToDisplay($Questions, $page, 5); 
 require_once(ROUTE_DIR.'vue/security/affiche_question.html.php');
 }
 }
@@ -62,7 +62,7 @@ $bonneReponse,
 }
 AddQuestion($newquestion);
 $_SESSION['questionAJOUTER']=$Question;
-header("location:".WEB_ROUTE."?controller=questionController&view=creerquestion") ;
+header("location:".WEB_ROUTE."?controller=questionController&view=list.question") ;
 }else{
 header("location:".WEB_ROUTE."?controller=questionController&view=creerquestion") ;
 }

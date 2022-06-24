@@ -42,7 +42,7 @@
                Créer Questions
             </a>
        </div>
-       <form action="<?php echo WEB_ROUTE ?>" method="POST">
+      <!--  <form lass="form" action="<?php echo WEB_ROUTE ?>" method="post" enctype="multipart/form-data">
        <input type="hidden" name="controller" value="questionController">
        <input type="hidden" name="action" value="creerquestion">
        <input type="hidden" name="action" value="CREER">
@@ -68,8 +68,85 @@
                           <i class="fa-solid fa-plus breukh"></i><br><br>
                       </span>  
                  </div>
-                 <button type="submit" class="butonQuestion">Enregistrer</button>
+                 <button type="submit" class="butonQuestion">Enregistrer</button> -->
         </form>
+        <form class="form" action="<?php echo WEB_ROUTE ?>" method="post" enctype="multipart/form-data">
+   
+    <input type="hidden" name="controller" value="questionController">
+    <input type="hidden" name="action" value="creerquestion">
+    <input type="hidden" name="action" value="CREER">
+
+    <div class="titre">
+            <center><h2>CREER  VOS  QUESTION</h2></center>
+        </div>
+       
+        <div class="container">
+        <div class="menu">
+                    <center><div class="cercle">
+                        <img src="../images/avatar-g74e1bf273_1280.png" alt="">
+                    </div></center>
+                    <center><h4>Admin</h4></center>
+                 <!--    <div class="text">
+                   
+                    <a href="<?php echo WEB_ROUTE.'?controller=questionController&view=list.question' ?>"> <h3>Listes Questions</h3></a>
+                    <a class="a" href="<?php echo WEB_ROUTE.'?controller=securityController&view=admin' ?>"><h3>Creer admin</h3></a>
+                    <a class="a" href="<?php echo WEB_ROUTE.'?controller=securityController&view=list.user' ?>"><h3>Listes joueurs</h3></a>
+                    <div class="admin"><a href="<?php echo WEB_ROUTE.'?controller=questionController&view=creerquestion' ?>"><h3>Créer Questions</h3></a></div>
+                    <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=list.users' ?>"><h3>Listes admins</h3></a>
+                    </div>
+            </div> -->
+                <div class="ligne">
+                  
+                </div>  
+                <div class="page">
+        
+
+<div class="cadree">
+
+    <div class="saisirdesquestions">
+
+        Question: <textarea name="question" id="question" cols="40" rows="15"></textarea>
+
+         <span><?php echo isset($arrayError['question']) ? $arrayError['question'] : '' ?></span> 
+
+    </div><br>
+
+    Nombre de point: <input type="number" name="numero" class="TAILLE" id="numero"><br><br>
+
+    Type de réponses:
+
+    <select name="typeQuestion" id="typeQuestion" class="TAILLE1">
+    <option value="" >Choix réponse</option>
+        <option value="simple" >Réponse simple</option>
+
+        <option value="unique">Réponse unique</option>
+
+        <option value="multiple">Réponse  multiple</option>
+
+    </select>
+
+    <span id="plus">
+
+        <i class="fa-solid fa-plus breukh"></i><br><br>
+
+    </span>
+
+    <label id="error"></label>
+
+    <div id="rep">
+
+         
+
+    </div>
+
+
+</div>
+
+<button type="submit" class="butonQuestion">
+    Enregistrer
+
+</button>
+</form>
         <style>
             .saisirdesquestions input {
              border: 2px solid #3792E5;

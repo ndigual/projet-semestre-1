@@ -42,7 +42,7 @@
        </div>
            <form class="form" action="<?php echo WEB_ROUTE ?>" method="post">
            <input type="hidden" name="controller" value="questionController">
-           <input type="hidden" name="action" value="list_question">
+           <input type="hidden" name="action" value="list.question">
                <P class="entete">LISTE DES QUESTIONS</P>
                <div class="B">
             
@@ -54,7 +54,7 @@
 
         <div class="menu">
                 <center><div class="cercle">
-                    <img src="public/images/avatar-g74e1bf273_1280.png" alt="">
+                    <img src="../images/avatar-g74e1bf273_1280.png" alt="">
                 </div></center>
                 <center><h4>Joueur</h4></center>
                 <div class="text">
