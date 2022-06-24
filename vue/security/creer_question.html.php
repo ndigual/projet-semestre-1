@@ -42,7 +42,7 @@
                Créer Questions
             </a>
        </div>
-       <form action="">
+       <form action="<?php echo WEB_ROUTE ?>" method="POST">
        <input type="hidden" name="controller" value="questionController">
        <input type="hidden" name="action" value="creerquestion">
        <input type="hidden" name="action" value="CREER">

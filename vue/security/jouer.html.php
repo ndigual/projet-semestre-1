@@ -23,6 +23,15 @@
         </div>
     </header>
     <div class="corps">
+    <div class="liste">
+           <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=jouer'?>">
+               jouer au jeux
+            </a>
+           <a href="<?php echo WEB_ROUTE.'?controller=securityController&view='?>">
+               les  cinq meilleurs score
+            </a>
+         
+     </div>
            <form action="">
                <P class="entete">LISTE DES QUESTIONS</P>
     

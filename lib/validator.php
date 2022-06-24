@@ -71,7 +71,6 @@ function valid_point(array $arrayError, $valeur, string $key){
 }
 
 function valid_nbr_reponse(array $arrayError, $valeur, string $key){
-   
     if (empty($valeur)) {
         $arrayError[$key] = "Ce champ est obligatoire";
     }elseif($valeur<= 0){
