@@ -26,7 +26,7 @@
    
     <div class="corps">
        <div class="liste">
-           <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=liste_question'?>">
+       <a href="<?php echo WEB_ROUTE.'?controller=questionController&view=list.question'?>">
                liste Questions
             </a>
            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=creer_admin'?>">
@@ -42,35 +42,9 @@
                Créer Questions
             </a>
        </div>
-      <!--  <form lass="form" action="<?php echo WEB_ROUTE ?>" method="post" enctype="multipart/form-data">
-       <input type="hidden" name="controller" value="questionController">
-       <input type="hidden" name="action" value="creerquestion">
-       <input type="hidden" name="action" value="CREER">
-               <P class="entete">PARAMETRER VOTRE QUIZZ</P>
-               <form action="">
-                <div class="parametre">
-                     <label for="">Questions</label>
-                     <textarea name="" id="" cols="30" rows="10"></textarea><br>
-                 </div>
-                 <div class="parametre">
-                     <label for="">Nobre de point</label>
-                     <input type="number" class="point"><br>
-                 </div>
-                  <div class="parametre">
-                      <label for="">Type de Qustion</label><br>
-                      <select name="" id="">
-                        <option value="">Donnez le type de reponse</option>
-                        <option value="Simple"> Reponse Simple</option>
-                        <option value="unique">Reponse unique</option>
-                        <option value="mulpiple"> Reponse a Choix multiple</option>
-                      </select>
-                      <span id="plus">
-                          <i class="fa-solid fa-plus breukh"></i><br><br>
-                      </span>  
-                 </div>
-                 <button type="submit" class="butonQuestion">Enregistrer</button> -->
+     
         </form>
-        <form class="form" action="<?php echo WEB_ROUTE ?>" method="post" enctype="multipart/form-data">
+ <form class="form" action="<?php echo WEB_ROUTE ?>" method="post" enctype="multipart/form-data">
    
     <input type="hidden" name="controller" value="questionController">
     <input type="hidden" name="action" value="creerquestion">
@@ -141,11 +115,11 @@
 
 
 </div>
-
-<button type="submit" class="butonQuestion">
+ <button type="submit" class="butonQuestion"> 
     Enregistrer
+ </button> 
+  
 
-</button>
 </form>
         <style>
             .saisirdesquestions input {

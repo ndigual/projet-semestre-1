@@ -33,7 +33,7 @@ if (isset($_SESSION['arrayError'])) {
   
     <div class="corps">
        <div class="liste">
-       <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=liste_question'?>">
+       <a href="<?php echo WEB_ROUTE.'?controller=questionController&view=list.question'?>">
                liste Questions
             </a>
            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=creer_admin'?>">

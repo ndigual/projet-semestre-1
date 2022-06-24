@@ -24,22 +24,66 @@
     </header>
     <div class="corps">
     <div class="liste">
-           <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=jouer'?>">
-               jouer au jeux
+    <a href="<?php echo WEB_ROUTE.'?controller=questionController&view=list.question'?>">
+               Acceder aux Questions
             </a>
            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view='?>">
                les  cinq meilleurs score
             </a>
          
      </div>
-           <form action="">
-               <P class="entete">LISTE DES QUESTIONS</P>
-    
-        </form>
-    </div>
+     <div class="form">
+          
+          <P class="entete">LISTE DES QUESTIONS</P>
+          <div class="B">
+       
+       <h4>Nombre de question/jeu</h4>
+       <input type="number" value="5">
+   
+</div>
+<div class="container">
 
 
+       <div class="ligne">
+         
+       </div>
+       <div class="page">
+<?php foreach ($Questions as $key => $val) : ?>
 
-    </div>
+<h3> <?php echo $key + 1, "." . $val['question']; ?></h3>
+
+<?php foreach ($val['reponse'] as $reps => $rep) : ?>
+<?php if ($val["typeQuestion"] == "multiple") : ?>
+<input type="checkbox"><?php echo $rep  ?><br>
+
+<?php elseif ($val["typeQuestion"] == "unique") : ?>
+<input type="radio" name="choix"><?php echo $rep ?> <br>
+<?php elseif ($val["typeQuestion"] == "simple") : ?>
+<input type="text" value="<?php echo $rep ?> "><br>
+
+<?php endif; ?>
+
+<?php endforeach; ?>
+
+<?php endforeach; ?>
+
+
+       </div>
+  
+
+       </div> 
+       <div class="pagination">
+   <?php for($i =1; $i<= $totalPage; $i++): ?>
+       <a href="<?=WEB_ROUTE.'?controller=questionController&view=list.question&page'.$i. '' ?>">
+           <button class="lien" ><?php echo $i; ?></button>
+       </a>
+
+       <?php endfor; ?>
+       
+   </div>
+   </div>
+</div>
+
+
 </body>
 </html>

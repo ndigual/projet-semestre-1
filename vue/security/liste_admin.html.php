@@ -24,7 +24,7 @@
     </header>
     <div class="corps">
        <div class="liste">
-           <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=liste_question'?>">
+           <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=listequestion'?>">
                liste Questions
             </a>
            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=creer_admin'?>">

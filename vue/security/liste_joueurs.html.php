@@ -26,7 +26,7 @@
     <input type="hidden" name="controller" value="securityController">
     <input type="hidden" name="action" value="list.user">
        <div class="liste">
-           <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=liste_question'?>">
+       <a href="<?php echo WEB_ROUTE.'?controller=questionController&view=list.question'?>">
                liste Questions
             </a>
            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=creer_admin'?>">

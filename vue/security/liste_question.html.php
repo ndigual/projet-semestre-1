@@ -24,7 +24,7 @@
     </header>
     <div class="corps">
        <div class="liste">
-           <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=liste_question'?>">
+       <a href="<?php echo WEB_ROUTE.'?controller=questionController&view=list.question'?>">
                liste Questions
             </a>
            <a href="<?php echo WEB_ROUTE.'?controller=securityController&view=creer_admin'?>">
@@ -40,38 +40,36 @@
                Créer Questions
             </a>
        </div>
-           <form class="form" action="<?php echo WEB_ROUTE ?>" method="post">
-           <input type="hidden" name="controller" value="questionController">
-           <input type="hidden" name="action" value="list.question">
+           <div class="form">
+          
                <P class="entete">LISTE DES QUESTIONS</P>
                <div class="B">
             
-            <h1>Nombre de question/jeu</h1>
+            <h4>Nombre de question/jeu</h4>
             <input type="number" value="5">
         
     </div>
     <div class="container">
 
-        <div class="menu">
+      <!--   <div class="menu">
                 <center><div class="cercle">
                     <img src="../images/avatar-g74e1bf273_1280.png" alt="">
                 </div></center>
                 <center><h4>Joueur</h4></center>
                 <div class="text">
                 
-<!--                     <div class="admin"><a href="<?php //echo WEB_ROUTE.'?controller=questionController&view=list.question' ?>"> <h3>Listes Questions</h3></a></div>
+                <div class="admin"><a href="<?php //echo WEB_ROUTE.'?controller=questionController&view=list.question' ?>"> <h3>Listes Questions</h3></a></div>
                 <a href="<?php //echo WEB_ROUTE.'?controller=securityController&view=admin' ?>"><h3>Creer admin</h3></a>
                 <a href="<?php //echo WEB_ROUTE.'?controller=securityController&view=list.user' ?>"><h3>Listes joueurs</h3></a>
                 <a href="<?php //echo WEB_ROUTE.'?controller=securityController&view=list.users' ?>"><h3>Listes admins</h3></a>
-                <a href="<?php //echo WEB_ROUTE.'?controller=securityController&view=question' ?>"> <h3>Créer Questions</h3></a> -->
+                <a href="<?php //echo WEB_ROUTE.'?controller=securityController&view=question' ?>"> <h3>Créer Questions</h3></a> 
                 </div>
-        </div>
+        </div> -->
             <div class="ligne">
               
             </div>
             <div class="page">
-
-            <?php foreach ($Questions as $key => $val) : ?>
+ <?php foreach ($Questions as $key => $val) : ?>
 
 <h3> <?php echo $key + 1, "." . $val['question']; ?></h3>
 
@@ -104,7 +102,7 @@
             <?php endfor; ?>
             
         </div>
-        </form>
+        </div>
     </div>
 
 
